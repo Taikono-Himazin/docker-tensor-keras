@@ -5,12 +5,9 @@ WORKDIR /jupyter
 
 COPY jupyter_notebook_config.py ../root/.jupyter/jupyter_notebook_config.py
 
-COPY requirements.txt requirements.txt
-
-RUN pip --no-cache-dir install -r requirements.txt
-
 RUN pip --no-cache-dir install \
 	keras\
+	opencv-python\
 	tqdm
 
 EXPOSE 8888
