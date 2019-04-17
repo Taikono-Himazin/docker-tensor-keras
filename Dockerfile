@@ -7,8 +7,8 @@ RUN pip --no-cache-dir install \
 	keras\
 	opencv-python\
 	pillow\
-	tqdm
-RUN pip install jupyter_contrib_nbextensions
+	tqdm\
+	jupyter_contrib_nbextensions
 
 EXPOSE 8888
 
