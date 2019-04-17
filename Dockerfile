@@ -10,6 +10,7 @@ RUN pip --no-cache-dir install \
 	opencv-python\
 	pillow\
 	tqdm
+RUN pip install jupyter_contrib_nbextensions
 
 EXPOSE 8888
 
