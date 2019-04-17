@@ -9,7 +9,12 @@ RUN pip --no-cache-dir install \
 	pillow\
 	tqdm\
 	jupyter_contrib_nbextensions
+	https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master
 
 EXPOSE 8888
 
 COPY jupyter_notebook_config.py ../root/.jupyter/
+
+RUN jupyter nbextensions_configurator enable --user
+RUN jupyter contrib nbextension install --user
+
