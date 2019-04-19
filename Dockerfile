@@ -8,7 +8,7 @@ RUN pip --no-cache-dir install \
 	opencv-python\
 	pillow\
 	tqdm\
-	jupyter_contrib_nbextensions
+	jupyter_contrib_nbextensions\
 	https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master
 
 EXPOSE 8888
