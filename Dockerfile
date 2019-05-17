@@ -3,6 +3,9 @@ LABEL maintainer='username'
 
 WORKDIR /jupyter
 
+RUN apt-get update && apt-get install -y \
+	graphviz
+
 RUN pip --no-cache-dir install \
 	keras\
 	opencv-python\
