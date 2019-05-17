@@ -12,7 +12,9 @@ RUN pip --no-cache-dir install \
 	pillow\
 	tqdm\
 	jupyter_contrib_nbextensions\
-	https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master
+	https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master\
+	pydot\
+	graphviz
 
 EXPOSE 8888
 
