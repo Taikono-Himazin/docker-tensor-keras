@@ -313,7 +313,7 @@ c.NotebookApp.port = 8888
 #  (MappingKernelManager.cull_idle_timeout) to shutdown the notebook server when
 #  it's not in use. This is not precisely timed: it may shut down up to a minute
 #  later. 0 (the default) disables this automatic shutdown.
-#c.NotebookApp.shutdown_no_activity_timeout = 0
+c.NotebookApp.shutdown_no_activity_timeout = 604800
 
 ## Supply SSL options for the tornado HTTPServer. See the tornado docs for
 #  details.
