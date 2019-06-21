@@ -4,7 +4,8 @@ LABEL maintainer='username'
 WORKDIR /jupyter
 
 RUN apt-get update && apt-get install -y \
-	graphviz
+	graphviz\
+	wget
 
 RUN pip --no-cache-dir install \
 	keras\
@@ -14,7 +15,7 @@ RUN pip --no-cache-dir install \
 	jupyter_contrib_nbextensions\
 	https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master\
 	pydot\
-	graphviz
+	graphviz\
 
 EXPOSE 8888
 
