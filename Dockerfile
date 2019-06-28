@@ -5,7 +5,8 @@ WORKDIR /jupyter
 
 RUN apt-get update && apt-get install -y \
 	graphviz\
-	wget
+	wget\
+	vim
 
 RUN pip --no-cache-dir install \
 	keras\
