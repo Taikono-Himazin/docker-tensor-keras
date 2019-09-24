@@ -16,7 +16,7 @@ RUN pip --no-cache-dir install \
 	jupyter_contrib_nbextensions\
 	https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master\
 	pydot\
-	graphviz\
+	graphviz
 
 EXPOSE 8888
 
