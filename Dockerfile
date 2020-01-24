@@ -6,7 +6,8 @@ WORKDIR /jupyter
 RUN apt-get update && apt-get install -y \
 	graphviz\
 	wget\
-	vim
+	vim\
+	git
 
 RUN pip --no-cache-dir install \
 	keras\
@@ -24,4 +25,5 @@ COPY jupyter_notebook_config.py ../root/.jupyter/
 
 RUN jupyter nbextensions_configurator enable --user
 RUN jupyter contrib nbextension install --user
+
 
