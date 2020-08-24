@@ -17,7 +17,8 @@ c.NotebookApp.open_browser = False
 #    from notebook.auth import passwd; passwd()
 #  
 #  The string should be of the form type:salt:hashed-password.
-c.NotebookApp.password = 'sha1:5caa8e7be44d:c8e0d0dc2e3d662e96eed8613b669dc12585eb65'
+# password is 'jupyter'
+c.NotebookApp.password = 'sha1:04b9806cee40:936a1015b10872dfa5e028a91a235abbc4672c1c'
 
 ## The port the notebook server will listen on.
 c.NotebookApp.port = 8888
